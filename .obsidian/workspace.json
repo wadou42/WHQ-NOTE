@@ -1,0 +1,207 @@
+{
+  "main": {
+    "id": "213e9156bc95438d",
+    "type": "split",
+    "children": [
+      {
+        "id": "4706ba7b902b21d7",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1af7de8d0f6d2da5",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "笔记/Linux 笔记.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Linux 笔记"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "b2611b2b701f2670",
+    "type": "split",
+    "children": [
+      {
+        "id": "624166967ff952b0",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f21d708d3001a9b3",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-folder-closed",
+              "title": "文件列表"
+            }
+          },
+          {
+            "id": "abc5424dd20cccb9",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "搜索"
+            }
+          },
+          {
+            "id": "58f5eda982776e43",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "1a0f38eccfef04a1",
+    "type": "split",
+    "children": [
+      {
+        "id": "66260a648857ec07",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2b6b3ffe57d693f1",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "常用配置文件.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "常用配置文件 的反向链接列表"
+            }
+          },
+          {
+            "id": "2ad8cc5d637103d6",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "template/模板.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "模板 的出链列表"
+            }
+          },
+          {
+            "id": "1c9f7dca39d294f3",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "标签"
+            }
+          },
+          {
+            "id": "f5cfafc1549b4985",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "笔记/Linux 笔记.md"
+              },
+              "icon": "lucide-list",
+              "title": "Linux 笔记 的大纲"
+            }
+          }
+        ],
+        "currentTab": 3
+      }
+    ],
+    "direction": "horizontal",
+    "width": 245.5,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:打开快速切换": false,
+      "graph:查看关系图谱": false,
+      "canvas:新建白板": false,
+      "daily-notes:打开/创建今天的日记": false,
+      "templates:插入模板": false,
+      "command-palette:打开命令面板": false,
+      "templater-obsidian:Templater": false,
+      "obsidian-git:Open Git source control": false
+    }
+  },
+  "active": "1af7de8d0f6d2da5",
+  "lastOpenFiles": [
+    "新建 文本文档.txt",
+    "日志/2025-03-10.md",
+    "日志/2025-03-08.md",
+    "笔记/Linux 笔记.md",
+    "日志/2025-03-07.md",
+    "日志/2025-03-06.md",
+    "日志/2025-03-05.md",
+    "日志/2025-03-04.md",
+    "笔记/TODO.md",
+    "日志/2025-03-03.md",
+    "template/模板.md",
+    "日志/2025-03-01.md",
+    "template/未命名.md",
+    "QuickAdd_Result.md",
+    "日志/2025-02-08.md",
+    "template",
+    "日志/2025-03-02.md",
+    "日志/2025-02-13.md",
+    "日志/2025-02-28.md",
+    "日志/2025-01-26.md",
+    "笔记/常用配置文件.md",
+    "figures/log时间分布.png",
+    "figures/Pasted image 20250303090447.png",
+    "figures/Pasted image 20250303115717.png",
+    "figures",
+    "figures/loss_curve.png",
+    "笔记/Lab周报.md",
+    "figure",
+    "笔记/Python 笔记.md",
+    "2025-02-28.md",
+    "日志/2025-01-30.md",
+    "笔记",
+    "日志",
+    "2025-01-20.md",
+    "Welcome.md",
+    "常用配置文件"
+  ]
+}
