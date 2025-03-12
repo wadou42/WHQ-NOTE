@@ -1,8 +1,8 @@
 [
-  "oz-clear-unused-images",
+  "obsidian-git",
   "obsidian-daily-todo-pro",
-  "metaedit",
-  "quickadd",
   "templater-obsidian",
-  "obsidian-git"
+  "quickadd",
+  "metaedit",
+  "oz-clear-unused-images"
 ]

@@ -1,14 +1,14 @@
 {
   "main": {
-    "id": "213e9156bc95438d",
+    "id": "f2795e1d823c416e",
     "type": "split",
     "children": [
       {
-        "id": "4706ba7b902b21d7",
+        "id": "08bc8674ff8c318a",
         "type": "tabs",
         "children": [
           {
-            "id": "1af7de8d0f6d2da5",
+            "id": "e7a286c2bd4001ab",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -27,27 +27,28 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "b2611b2b701f2670",
+    "id": "a203daa29bfb1f12",
     "type": "split",
     "children": [
       {
-        "id": "624166967ff952b0",
+        "id": "cac408949fb51346",
         "type": "tabs",
         "children": [
           {
-            "id": "f21d708d3001a9b3",
+            "id": "f5346d789ef34fdb",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "alphabetical",
+                "autoReveal": false
               },
               "icon": "lucide-folder-closed",
               "title": "文件列表"
             }
           },
           {
-            "id": "abc5424dd20cccb9",
+            "id": "299c517731aac893",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -64,36 +65,35 @@
             }
           },
           {
-            "id": "58f5eda982776e43",
+            "id": "4fae4512274908fb",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
               "state": {},
               "icon": "lucide-bookmark",
-              "title": "Bookmarks"
+              "title": "书签"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 200
+    "width": 300
   },
   "right": {
-    "id": "1a0f38eccfef04a1",
+    "id": "bffece5cee0ca829",
     "type": "split",
     "children": [
       {
-        "id": "66260a648857ec07",
+        "id": "65724aac47862b11",
         "type": "tabs",
         "children": [
           {
-            "id": "2b6b3ffe57d693f1",
+            "id": "84ba3e7a336873a3",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
-                "file": "常用配置文件.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,46 +103,60 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "常用配置文件 的反向链接列表"
+              "title": "反向链接"
             }
           },
           {
-            "id": "2ad8cc5d637103d6",
+            "id": "cbbe0bed6db93dac",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "template/模板.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "模板 的出链列表"
+              "title": "出链"
             }
           },
           {
-            "id": "1c9f7dca39d294f3",
+            "id": "dc60f67364a4bcb3",
             "type": "leaf",
             "state": {
               "type": "tag",
               "state": {
                 "sortOrder": "frequency",
-                "useHierarchy": true
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-tags",
               "title": "标签"
             }
           },
           {
-            "id": "f5cfafc1549b4985",
+            "id": "9fff27a46e6d0799",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "笔记/Linux 笔记.md"
+                "file": "笔记/Linux 笔记.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
               },
               "icon": "lucide-list",
               "title": "Linux 笔记 的大纲"
+            }
+          },
+          {
+            "id": "eff794d71ef5967a",
+            "type": "leaf",
+            "state": {
+              "type": "git-view",
+              "state": {},
+              "icon": "git-pull-request",
+              "title": "Source Control"
             }
           }
         ],
@@ -150,8 +164,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 245.5,
-    "collapsed": true
+    "width": 300
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -161,47 +174,38 @@
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
       "command-palette:打开命令面板": false,
-      "templater-obsidian:Templater": false,
       "obsidian-git:Open Git source control": false
     }
   },
-  "active": "1af7de8d0f6d2da5",
+  "active": "9fff27a46e6d0799",
   "lastOpenFiles": [
-    "新建 文本文档.txt",
+    "笔记/常用配置文件.md",
+    "笔记/TODO.md",
+    "笔记/Python 笔记.md",
+    "笔记/Linux 笔记.md",
+    "笔记/Lab周报.md",
+    "笔记",
+    "日志/2025-03-11.md",
     "日志/2025-03-10.md",
     "日志/2025-03-08.md",
-    "笔记/Linux 笔记.md",
     "日志/2025-03-07.md",
     "日志/2025-03-06.md",
     "日志/2025-03-05.md",
     "日志/2025-03-04.md",
-    "笔记/TODO.md",
     "日志/2025-03-03.md",
-    "template/模板.md",
     "日志/2025-03-01.md",
-    "template/未命名.md",
-    "QuickAdd_Result.md",
-    "日志/2025-02-08.md",
-    "template",
-    "日志/2025-03-02.md",
-    "日志/2025-02-13.md",
     "日志/2025-02-28.md",
+    "日志/2025-02-13.md",
+    "日志/2025-02-08.md",
     "日志/2025-01-26.md",
-    "笔记/常用配置文件.md",
-    "figures/log时间分布.png",
-    "figures/Pasted image 20250303090447.png",
-    "figures/Pasted image 20250303115717.png",
-    "figures",
-    "figures/loss_curve.png",
-    "笔记/Lab周报.md",
-    "figure",
-    "笔记/Python 笔记.md",
-    "2025-02-28.md",
-    "日志/2025-01-30.md",
-    "笔记",
     "日志",
-    "2025-01-20.md",
-    "Welcome.md",
-    "常用配置文件"
+    "template/模板.md",
+    "template",
+    "figures/loss_curve.png",
+    "figures/log时间分布.png",
+    "figures/Pasted image 20250303115717.png",
+    "figures/Pasted image 20250303090447.png",
+    "figures",
+    "欢迎.md"
   ]
 }
