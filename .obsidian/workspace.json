@@ -78,7 +78,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "right": {
     "id": "bffece5cee0ca829",
@@ -178,17 +178,17 @@
       "templater-obsidian:Templater": false
     }
   },
-  "active": "9fff27a46e6d0799",
+  "active": "e7a286c2bd4001ab",
   "lastOpenFiles": [
+    "笔记/Linux 笔记.md",
+    "笔记/TODO.md",
+    "笔记/Lab周报.md",
     "笔记/常用配置文件.md",
     "figures/数据集原始数据分布.png",
     "figures/数据集log时间分布.png",
     "figures/Pasted image 20250312153010.png",
     "figures/Pasted image 20250303115717.png",
     "figures/loss_curve.png",
-    "笔记/Lab周报.md",
-    "笔记/Linux 笔记.md",
-    "笔记/TODO.md",
     "笔记/Python 笔记.md",
     "笔记",
     "日志/2025-03-11.md",
