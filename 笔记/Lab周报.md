@@ -58,6 +58,8 @@ label：相对于O3的加速比(spreedup)
 - [ ] 对预测模型也加一个loss，然后和整体的loss做一个线性融合
 - [ ] 
 
+# commit后面的别跟我一样，用你自己的
+https://update.code.visualstudio.com/commit:6609ac3d66f4eade5cf376d1cb76f13985724bcb /server-linux-x64/stable
 
 
 ```
