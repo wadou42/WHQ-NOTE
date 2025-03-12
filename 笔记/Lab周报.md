@@ -17,5 +17,9 @@ MSELoss
 ##  2025年3月12日
 
 ```
-训练入口： 
+训练入口： Autotunning/main.py
+训练类： Autotunning/train.py
+数据预处理： Autotunning/utils/preprocess.py 
+模型： Autotunning/models
+配置文件： config/config.yaml
 ```
