@@ -1,14 +1,14 @@
 {
   "main": {
-    "id": "f2795e1d823c416e",
+    "id": "213e9156bc95438d",
     "type": "split",
     "children": [
       {
-        "id": "08bc8674ff8c318a",
+        "id": "6b493b5b66f5527e",
         "type": "tabs",
         "children": [
           {
-            "id": "e7a286c2bd4001ab",
+            "id": "44e2ce0716049ae5",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -27,28 +27,27 @@
     "direction": "vertical"
   },
   "left": {
-    "id": "a203daa29bfb1f12",
+    "id": "b2611b2b701f2670",
     "type": "split",
     "children": [
       {
-        "id": "cac408949fb51346",
+        "id": "624166967ff952b0",
         "type": "tabs",
         "children": [
           {
-            "id": "f5346d789ef34fdb",
+            "id": "f21d708d3001a9b3",
             "type": "leaf",
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical",
-                "autoReveal": false
+                "sortOrder": "alphabetical"
               },
               "icon": "lucide-folder-closed",
               "title": "文件列表"
             }
           },
           {
-            "id": "299c517731aac893",
+            "id": "abc5424dd20cccb9",
             "type": "leaf",
             "state": {
               "type": "search",
@@ -65,35 +64,36 @@
             }
           },
           {
-            "id": "4fae4512274908fb",
+            "id": "58f5eda982776e43",
             "type": "leaf",
             "state": {
               "type": "bookmarks",
               "state": {},
               "icon": "lucide-bookmark",
-              "title": "书签"
+              "title": "Bookmarks"
             }
           }
         ]
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 200
   },
   "right": {
-    "id": "bffece5cee0ca829",
+    "id": "1a0f38eccfef04a1",
     "type": "split",
     "children": [
       {
-        "id": "65724aac47862b11",
+        "id": "66260a648857ec07",
         "type": "tabs",
         "children": [
           {
-            "id": "84ba3e7a336873a3",
+            "id": "2b6b3ffe57d693f1",
             "type": "leaf",
             "state": {
               "type": "backlink",
               "state": {
+                "file": "常用配置文件.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,54 +103,50 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "反向链接"
+              "title": "常用配置文件 的反向链接列表"
             }
           },
           {
-            "id": "cbbe0bed6db93dac",
+            "id": "2ad8cc5d637103d6",
             "type": "leaf",
             "state": {
               "type": "outgoing-link",
               "state": {
+                "file": "template/模板.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "出链"
+              "title": "模板 的出链列表"
             }
           },
           {
-            "id": "dc60f67364a4bcb3",
+            "id": "1c9f7dca39d294f3",
             "type": "leaf",
             "state": {
               "type": "tag",
               "state": {
                 "sortOrder": "frequency",
-                "useHierarchy": true,
-                "showSearch": false,
-                "searchQuery": ""
+                "useHierarchy": true
               },
               "icon": "lucide-tags",
               "title": "标签"
             }
           },
           {
-            "id": "9fff27a46e6d0799",
+            "id": "f5cfafc1549b4985",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "笔记/Lab周报.md",
-                "followCursor": false,
-                "showSearch": false,
-                "searchQuery": ""
+                "file": "笔记/Linux 笔记.md"
               },
               "icon": "lucide-list",
-              "title": "Lab周报 的大纲"
+              "title": "Linux 笔记 的大纲"
             }
           },
           {
-            "id": "eff794d71ef5967a",
+            "id": "a20e42f5d84e56ac",
             "type": "leaf",
             "state": {
               "type": "git-view",
@@ -160,11 +156,11 @@
             }
           }
         ],
-        "currentTab": 3
+        "currentTab": 4
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 245.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -174,40 +170,50 @@
       "daily-notes:打开/创建今天的日记": false,
       "templates:插入模板": false,
       "command-palette:打开命令面板": false,
-      "obsidian-git:Open Git source control": false,
-      "templater-obsidian:Templater": false
+      "templater-obsidian:Templater": false,
+      "obsidian-git:Open Git source control": false
     }
   },
-  "active": "e7a286c2bd4001ab",
+  "active": "44e2ce0716049ae5",
   "lastOpenFiles": [
-    "笔记/常用配置文件.md",
     "figures/数据集原始数据分布.png",
     "figures/数据集log时间分布.png",
     "figures/Pasted image 20250312153010.png",
-    "figures/Pasted image 20250303115717.png",
-    "figures/loss_curve.png",
-    "笔记/Lab周报.md",
-    "笔记/Linux 笔记.md",
-    "笔记/TODO.md",
-    "笔记/Python 笔记.md",
-    "笔记",
     "日志/2025-03-11.md",
+    "笔记/Linux 笔记.md",
+    "新建 文本文档.txt",
     "日志/2025-03-10.md",
     "日志/2025-03-08.md",
     "日志/2025-03-07.md",
     "日志/2025-03-06.md",
     "日志/2025-03-05.md",
     "日志/2025-03-04.md",
+    "笔记/TODO.md",
     "日志/2025-03-03.md",
-    "日志/2025-03-01.md",
-    "日志/2025-02-28.md",
-    "日志/2025-02-13.md",
-    "日志/2025-02-08.md",
-    "日志/2025-01-26.md",
-    "日志",
     "template/模板.md",
+    "日志/2025-03-01.md",
+    "template/未命名.md",
+    "QuickAdd_Result.md",
+    "日志/2025-02-08.md",
     "template",
+    "日志/2025-03-02.md",
+    "日志/2025-02-13.md",
+    "日志/2025-02-28.md",
+    "日志/2025-01-26.md",
+    "笔记/常用配置文件.md",
+    "figures/log时间分布.png",
+    "figures/Pasted image 20250303090447.png",
+    "figures/Pasted image 20250303115717.png",
     "figures",
-    "欢迎.md"
+    "figures/loss_curve.png",
+    "笔记/Lab周报.md",
+    "figure",
+    "笔记/Python 笔记.md",
+    "2025-02-28.md",
+    "日志/2025-01-30.md",
+    "笔记",
+    "日志",
+    "2025-01-20.md",
+    "常用配置文件"
   ]
 }
