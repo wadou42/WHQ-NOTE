@@ -121,7 +121,7 @@ git push -u origin dev # 推送新分支到远程
 ### 从远程同步分支
 将刚创建的分支push到远程仓库之后，在一台新的服务器上如何获取这个分支呢：
 ```bash
-
+git checkout -b refactor origin/refactor
 ```
 ## tldr
 too long doesn't read

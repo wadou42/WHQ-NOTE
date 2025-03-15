@@ -58,8 +58,18 @@ label：相对于O3的加速比(spreedup)
 - [ ] 对预测模型也加一个loss，然后和整体的loss做一个线性融合
 - [ ] 
 
-# commit后面的别跟我一样，用你自己的
-https://update.code.visualstudio.com/commit:6609ac3d66f4eade5cf376d1cb76f13985724bcb /server-linux-x64/stable
+
+
+TODO 
+- [ ] 检查是否有函数被截断
+在所有数据中，只有不到10条instance是被截断的，应该不影响。
+
+- [ ] 数据集出现的问题
+![[speedup分布_按照code取平均.png]]
+
+
+- [ ] 检验一个模型在更小的范围内是否可行？
+我们按照代码表征对code进行聚类，然后在每一类中按照9:1划分数据集，效果依然一般。
 
 
 ```
