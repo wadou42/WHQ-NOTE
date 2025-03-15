@@ -52,7 +52,13 @@ label：相对于O3的加速比(spreedup)
 在做分类任务的时候，对`1±threshold`的值剔除、有时为了数据的平衡性，对[1-threshold, 1+threshold/2]的数据进行剔除，原始数据正负样本比例大概为3:7；按照有偏剔除，正负样本的比例大概为4:5，基本平衡。（threshold取0.5 、0.1、0.05尝试过）
 
 
-
+```
+训练入口： Autotunning/main.py
+训练类： Autotunning/train.py
+数据预处理： Autotunning/utils/preprocess.py 
+模型： Autotunning/models
+配置文件： config/config.yaml
+```
 
 可以尝试的方案：
 - [ ] 对预测模型也加一个loss，然后和整体的loss做一个线性融合
@@ -72,6 +78,7 @@ label：相对于O3的加速比(spreedup)
 
 
 - [ ] 二分类任务
+
 在做二分类任务的时候，我们想先让训练集和验证集的code数据交叉，也就是一些code既出现在训练集也出现在预测集，结果表现出乎意料的好。然后就分析了一下数据......
 
 横轴：按照code划分数据集，每个code组的正样本占样本总数的比例。
@@ -83,16 +90,14 @@ label：相对于O3的加速比(spreedup)
 统计一下原始数据：
 横轴：code分组
 纵轴：红色是均值，图是按照均值排序；绿色、橙色、蓝色分别是四分位
+所有的数据：
 ![[加速比数据分布——按照code划分.png]]
+
+redis的数据:
+![[redis的speedup分布.png]]
 
 - [ ] 检验一个模型在更小的范围内是否可行（回归任务）？
 我们按照代码表征对code进行聚类，然后在每一类中按照9:1划分数据集，效果依然一般。但是这里聚类使用的是KMEANS聚类，我们的code表征之后维度是768，效果可能不是太好。
 
 
-```
-训练入口： Autotunning/main.py
-训练类： Autotunning/train.py
-数据预处理： Autotunning/utils/preprocess.py 
-模型： Autotunning/models
-配置文件： config/config.yaml
-```
+### NEW TODO
