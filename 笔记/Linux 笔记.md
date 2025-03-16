@@ -65,6 +65,9 @@ pkill -u whq
 2. 执行下面的命令即可
 ```bash
 bash Anaconda3-2024.10-1-Linux-aarch64.sh
+# 将常用的一个分支加入
+conda config --add channels conda-forge
+conda config --set channel_priority strict
 ```
 ### 环境创建、激活、删除
 ```bash
