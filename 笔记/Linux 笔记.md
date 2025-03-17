@@ -93,6 +93,17 @@ conda env create -f transformer.yml
 
 ## git
 
+### 本地已有代码，从头创建仓库
+远程先创建一个空的仓库
+本地：
+```bash
+git remote add origin git@github.com:wadou42/SRTuner.git
+
+git add .
+git commit -m "init"
+git push -u origin master
+```
+
 ### 网络代理
 设置代理、取消代理
 ```bash
