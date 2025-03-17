@@ -65,6 +65,9 @@ pkill -u whq
 2. 执行下面的命令即可
 ```bash
 bash Anaconda3-2024.10-1-Linux-aarch64.sh
+# 将常用的一个分支加入
+conda config --add channels conda-forge
+conda config --set channel_priority strict
 ```
 ### 环境创建、激活、删除
 ```bash
@@ -89,6 +92,17 @@ conda env create -f transformer.yml
 ```
 
 ## git
+
+### 本地已有代码，从头创建仓库
+远程先创建一个空的仓库, 不用加README文件
+本地
+```bash
+git remote add origin git@github.com:wadou42/SRTuner.git
+
+git add .
+git commit -m "init"
+git push -u origin master
+```
 
 ### 网络代理
 设置代理、取消代理
@@ -121,7 +135,10 @@ git push -u origin dev # 推送新分支到远程
 ### 从远程同步分支
 将刚创建的分支push到远程仓库之后，在一台新的服务器上如何获取这个分支呢：
 ```bash
+git checkout -b refactor origin/refactor
 
+# 如果是一个新的服务器，可以这样同步所有的分支
+for branch in $(git branch -r | grep -v 'HEAD'); do git checkout --track "$branch"; done
 ```
 ## tldr
 too long doesn't read
