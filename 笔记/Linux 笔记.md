@@ -94,8 +94,8 @@ conda env create -f transformer.yml
 ## git
 
 ### 本地已有代码，从头创建仓库
-远程先创建一个空的仓库
-本地：
+远程先创建一个空的仓库, 不用加README文件
+本地
 ```bash
 git remote add origin git@github.com:wadou42/SRTuner.git
 
