@@ -136,6 +136,9 @@ git push -u origin dev # 推送新分支到远程
 将刚创建的分支push到远程仓库之后，在一台新的服务器上如何获取这个分支呢：
 ```bash
 git checkout -b refactor origin/refactor
+
+# 如果是一个新的服务器，可以这样同步所有的分支
+for branch in $(git branch -r | grep -v 'HEAD'); do git checkout --track "$branch"; done
 ```
 ## tldr
 too long doesn't read
