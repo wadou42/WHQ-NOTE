@@ -3,8 +3,6 @@
 
 2. 过去使用了（codebert/CodeT5/GraphCodeBert）X（MLP、ResNet）组合做预测，发现效果并不理想，以及一些其他的尝试...
 
-
-
 3. 数据集分布存在问题。
        目前的数据集由code和opt的笛卡尔积，如果按照code进行分组统计：
        
