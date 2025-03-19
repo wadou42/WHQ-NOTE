@@ -10,3 +10,5 @@
 
 **DOING**  将这些“两端”的数据筛除，进行训练
 在分类任务上：
+Test1：Accuracy: 0.7593, Precision: 0.8737, Recall: 0.6990, F1_score: 0.7766, Positive_ratio（验证集中正类占比）: 0.5988
+Test2：  Accuracy: 0.7222, Precision: 0.7463, Recall: 0.6550, F1_score: 0.6977, Positive_ratio: 0.4893
