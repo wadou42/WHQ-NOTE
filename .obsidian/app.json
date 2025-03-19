@@ -3,5 +3,12 @@
   "promptDelete": false,
   "showIndentGuide": false,
   "alwaysUpdateLinks": true,
-  "attachmentFolderPath": "figures"
+  "attachmentFolderPath": "figures",
+  "pdfExportSettings": {
+    "includeName": true,
+    "pageSize": "A4",
+    "landscape": false,
+    "margin": "0",
+    "downscalePercent": 100
+  }
 }
