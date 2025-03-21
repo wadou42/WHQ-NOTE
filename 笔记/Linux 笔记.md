@@ -244,5 +244,5 @@ scp -3 -r wanghongqi@172.31.128.205:/home/wanghongqi/CodeRep/models/modify_saved
 ## tmux
 ### 会话删除与创建
 ```bash
-
+tmux new-session -s whq  #这里s是session的意思
 ```
