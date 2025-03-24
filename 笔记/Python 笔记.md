@@ -9,7 +9,6 @@ def list_file(dir_path):
 			print(file)
 ```
 
-
 ### 延迟初始化
 比较灵活，使用哪一种模型、类、函数，甚至是包
 ```python
@@ -42,3 +41,5 @@ module_factory = {
 module = module_factory["a"]()
 print(module.function())  # 调用 module_a 中的函数
 ```
+
+### random
