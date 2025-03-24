@@ -9,3 +9,4 @@ def list_file(dir_path):
 			print(file)
 ```
 
+### random
