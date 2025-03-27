@@ -71,3 +71,17 @@ random.shuffle(lst)
 
 
 ### matplotlib绘图
+1.**基础用法**：
+```python
+import matplotlib.pyplot as plt
+
+X = [1,2,3,4]
+Y = [1,4,9,16]
+
+plt.plot(X, Y)
+plt.savefig()
+```
+2.**标记和颜色**
+```python
+plt.plot(X, Y, marker='o', markerfacecolor='red', markeredgecolor='black')
+```
