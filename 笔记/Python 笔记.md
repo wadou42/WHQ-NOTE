@@ -67,20 +67,4 @@ random.shuffle(lst)
 
 
 
-### tensor类型转化
-
-
-```python
-def convert_tensor_to_json(data):
-	if isinstance(data, torch.Tensor):
-		if data.numel() == 1:  # 单个值的 Tensor
-			return data.item()  # 转换为 float
-		else:  # 多维 Tensor
-			return data.tolist()  # 转换为 list
-	elif isinstance(data, tuple):  # 处理 tuple 类型的 key
-		return [convert_tensor_to_json(item) for item in data]
-	elif isinstance(data, dict):  # 处理字典
-		return {convert_tensor_to_json(key): convert_tensor_to_json(value) for key, value in data.items()}
-	else:
-		return data
-```
+#
