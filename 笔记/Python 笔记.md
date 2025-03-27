@@ -67,4 +67,7 @@ random.shuffle(lst)
 
 
 
-#
+### tensor数据类型转化
+
+
+### matplotlib绘图
