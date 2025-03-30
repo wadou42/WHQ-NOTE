@@ -67,20 +67,68 @@ random.shuffle(lst)
 
 
 
-### tensor类型转化
+### tensor数据类型转化
 
 
-```python
-def convert_tensor_to_json(data):
-	if isinstance(data, torch.Tensor):
-		if data.numel() == 1:  # 单个值的 Tensor
-			return data.item()  # 转换为 float
-		else:  # 多维 Tensor
-			return data.tolist()  # 转换为 list
-	elif isinstance(data, tuple):  # 处理 tuple 类型的 key
-		return [convert_tensor_to_json(item) for item in data]
-	elif isinstance(data, dict):  # 处理字典
-		return {convert_tensor_to_json(key): convert_tensor_to_json(value) for key, value in data.items()}
-	else:
-		return data
+### matplotlib绘图
+0.**乱码问题**
+这个字体可能没有，可以在~/.cache/matplotlib/\*.json中查看其他字体，也可以去下载
+```python 
+plt.rcParams['font.sans-serif'] = ['SimHei']  # 用来正常显示中文标签
+plt.rcParams['axes.unicode_minus'] = False  # 解决负号'-'显示为方块的问题
 ```
+1.**基础用法**：
+```python
+import matplotlib.pyplot as plt
+
+X = [1,2,3,4]
+Y = [1,4,9,16]
+
+plt.plot(X, Y)
+plt.savefig()
+```
+2.**标记和颜色**
+其中markerfacecolor是填充物的颜色，markeredgecolor是边缘的颜色
+```python
+plt.plot(X, Y, marker='o', markerfacecolor='red', markeredgecolor='black')
+```
+一些常见的标志
+'.' 点标记
+',' 像素标记
+'o' 圆圈
+'v' 下三角
+'^' 上三角
+'<' 左三角
+'>' 右三角
+'1' 类似三叉戟向下
+'2' 类似三叉戟向上
+'3' 左三叉戟
+'4' 右三叉戟
+'s' 正方形
+'p' 五边形
+'\*' 星号
+'h' 六边形侧边
+'H' 六边形点
+'+' 加号
+'x' x标记
+'D' 菱形
+'d' 细菱形
+'|' 水平线标记
+'\_' 垂直线标记
+
+3.**线性基础**
+```python 
+import matplotlib.pyplot as plt
+import numpy as np
+
+x = np.linspace(0, 10, 100)
+plt.plot(x, np.sin(x), linestyle='-', label='实线') 
+plt.plot(x, np.cos(x), linestyle='--', label='虚线')
+plt.plot(x, np.tan(x), linestyle='-.', label='点划线') 
+plt.plot(x, -np.sin(x), linestyle=':', label='点线')  
+
+plt.legend()
+plt.show()
+```
+
+4.
