@@ -19,7 +19,7 @@ conda config --set show_channel_urls yes
 conda create -n pytorch python=3.9 # 这里的pytorch是名字，环境名字
 # 激活环境
 conda activate pytorch
-# conda install 和 pip install都可以，conda install可以自己尝试解决冲突，推荐
+# conda install 和 pip install都可以，conda install可以自己尝试解决冲突，推荐   
 conda install pytorch torchvision torchaudio cpuonly -c pytorch
 ```
 
