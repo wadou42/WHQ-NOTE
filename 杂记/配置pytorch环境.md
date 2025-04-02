@@ -1,4 +1,4 @@
-1. 安装conda
+1. 安装conda，不要安装在c盘
 2. 配置清华源
 	1. 查看已有的镜像
 	```bash
@@ -15,9 +15,11 @@ conda config --set show_channel_urls yes
 
    3. 配置环境
 ```bash
+# 创建新环境
 conda create -n pytorch python=3.9 # 这里的pytorch是名字，环境名字
+# 激活环境
 conda activate pytorch
-
+# conda install 和 pip install都可以，conda install可以自己尝试解决冲突，推荐
 conda install pytorch torchvision torchaudio cpuonly -c pytorch
 ```
 
