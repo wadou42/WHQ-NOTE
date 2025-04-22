@@ -2,7 +2,7 @@
 
 body {
 
---file-line-width: 70rem; # 默认值为 45rem
+	--file-line-width: 370rem; # 默认值为 45rem
 
 }
 
