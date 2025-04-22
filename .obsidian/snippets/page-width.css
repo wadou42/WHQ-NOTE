@@ -1,9 +1,18 @@
+/* 全局设置 */
 body {
-  --file-line-width: 85%;  /* 控制最大宽度 */
+  --file-line-width: 90%;
 }
 
-.markdown-preview-view, .markdown-source-view {
-  max-width: 100%;  /* 或固定宽度，如 800px */
-  margin-left: auto !important;
-  margin-right: auto !important
+/* 编辑模式滚动条靠右 */
+.markdown-source-view {
+  max-width: 100%;
+  margin: 0 0 0 10%;
+  padding-right: 0 !important;
+}
+
+/* 编辑模式滚动容器 */
+.markdown-source-view .cm-scroller {
+  overflow-y: auto;
+  padding-right: 0 !important;
+  margin-right: 0 !important;
 }
