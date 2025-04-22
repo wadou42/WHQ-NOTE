@@ -1,9 +1,9 @@
-```css
-
 body {
-
-	--file-line-width: 370rem; # 默认值为 45rem
-
+  --file-line-width: 85%;  /* 控制最大宽度 */
 }
 
-```
+.markdown-preview-view, .markdown-source-view {
+  max-width: 100%;  /* 或固定宽度，如 800px */
+  margin-left: auto !important;
+  margin-right: auto !important
+}
