@@ -231,16 +231,19 @@ unalias 别名
 ```
 
 ## 跨系统文件传输
-
+中转传输，最常用的方式。由a传输到b
 ```bash
-# 中转传输，最常用的方式。由a传输到b
+
 scp -3 user@server_a:/path/to/file user@server_b:/path/to/remote/directory
 # example
 scp -3 -r whq@173.52.1.2:/home/whq/CodeRep wanghongqi@172.31.128.205:/home/wanghongqi
 
 scp -3 -r wanghongqi@172.31.128.205:/home/wanghongqi/CodeRep/models/modify_saved_combined_model_best.pth whq@173.52.1.2:/home/whq
 ```
-
+直接向某一个服务器传输
+```bash
+scp F:\EdgeDonload\cmake-3.23.1-linux-aarch64.tar.gz whq@173.52.1.2:/home/whq/Download
+```
 ## tmux
 ### 会话删除与创建
 ```bash
