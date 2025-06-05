@@ -4,5 +4,6 @@
   "templater-obsidian",
   "quickadd",
   "metaedit",
-  "oz-clear-unused-images"
+  "oz-clear-unused-images",
+  "mousewheel-image-zoom"
 ]
