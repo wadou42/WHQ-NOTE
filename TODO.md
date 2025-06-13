@@ -3,7 +3,7 @@
 - [x] 洗内裤
 - [ ] 整理宿舍
 - [ ] 改论文
-- [ ] 喝三杯水睡觉之前
+- [x] 喝三杯水睡觉之前
 - [ ] srtuner测试doris、scann、redis三个软件
 	- [ ] doris
 	- [ ] scann
