@@ -109,7 +109,10 @@ git config --global user.email "wanghongqi@tju.edu.cn"
 服务器生成rsa
 ```bash
 ssh-keygen -t rsa
+ssh -T git@github.com   # verify
 ```
+
+
 ### 本地已有代码，从头创建仓库
 远程先创建一个空的仓库, 不用加README文件
 本地
