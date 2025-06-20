@@ -100,7 +100,7 @@ conda env create -f transformer.yml
 apt install git -y
 ```
 
-配置邮箱账户
+配置邮箱账户  
 ### 本地已有代码，从头创建仓库
 远程先创建一个空的仓库, 不用加README文件
 本地
