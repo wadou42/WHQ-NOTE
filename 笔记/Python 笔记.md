@@ -165,3 +165,155 @@ plt.plot(X, Y, marker='o', markerfacecolor='red', markeredgecolor='black')
 '|' 水平线标记
 '\_' 垂直线标记
 
+## Python `re` 正则表达式学习笔记
+
+### 📌 基本概念
+
+- `re` 是 Python 内置的正则模块，用于字符串模式匹配、提取、替换等。
+    
+- 使用前要导入模块：
+    
+
+ import re
+
+---
+
+### ✨ 常用函数
+
+1. `re.search(pattern, string)`
+
+- 在整个字符串中搜索第一个匹配项。
+    
+- 返回一个 `Match` 对象（或 `None`）。
+    
+- 用 `.group()` 获取匹配内容。
+
+#### 示例：
+```python
+ match = re.search(r"\d+", "Task took 123 ms")  
+ if match:  
+     print(match.group())       # '123'  
+     print(int(match.group()))  # 123（用于计算）
+
+```
+
+### 2. `re.findall(pattern, string)`
+
+- 找出所有匹配项，返回 **字符串组成的列表**。
+    
+- 如果使用了多个 `()` 捕获组，返回的是元组列表。
+    
+#### 示例：
+```python
+ nums = re.findall(r"\d+", "ID: 123, 456, 789")  
+ print(nums)           # ['123', '456', '789']  
+ nums = [int(n) for n in nums]
+```
+
+### 3. 捕获组 `()` 与 `group(n)`
+
+- `()` 表示正则中的**捕获组**。
+    
+- `group(0)`：整个匹配串
+    
+- `group(1)`：第一个 `()` 的内容，以此类推
+    
+
+#### 示例：
+```
+python
+ text = "Backup ID: 456, Archive ID: 789"  
+ match = re.search(r"Backup ID:\s*(\d+), Archive ID:\s*(\d+)", text)  
+ print(match.group(1))  # '456'  
+ print(match.group(2))  # '789'
+```
+
+
+## 🧠 常见错误和注意事项
+
+- ✅ `re.search()` 和 `re.findall()` 都需要传入两个参数：
+    
+
+ re.search(pattern, string)  
+ re.findall(pattern, string)
+
+- ✅ 提取到的数字默认是字符串类型，需要用 `int()` 转换才能用于计算。
+    
+
+---
+
+## 🛠 常用正则语法速查
+
+|表达式|含义|
+|---|---|
+|`\d`|任意一个数字|
+|`\d+`|一串连续数字|
+|`\s`|一个空白字符（空格、\t）|
+|`\s*`|0 个或多个空白符|
+|`^`|行首|
+|`$`|行尾|
+|`.`|任意字符（不含换行）|
+|`[...]`|匹配字符集内任意字符|
+|`()`|捕获组（group）|
+|`\b`|单词边界（boundary）|
+
+---
+###  示例：提取日志数字并计算平均值
+
+ logs = [  
+     "Duration: 83ms",  
+     "Duration: 105ms",  
+     "Duration: 97ms",  
+     "Duration: 89ms"  
+ ]  
+ ​  
+ total = 0  
+ count = 0  
+ ​  
+ for log in logs:  
+     match = re.search(r"Duration:\s*(\d+)ms", log)  
+     if match:  
+         total += int(match.group(1))  
+         count += 1  
+ ​  
+ average = total / count if count else 0  
+ print("平均耗时:", average)
+
+---
+
+示例：提取特定字段的数字
+
+ line = "Backup ID: 456, Archive ID: 789"  
+ match = re.search(r"Backup ID:\s*(\d+), Archive ID:\s*(\d+)", line)  
+ if match:  
+     print("Backup ID:", int(match.group(1)))  
+     print("Archive ID:", int(match.group(2)))
+
+---
+
+ 示例：提取以 ERROR 开头的日志行
+```python 
+ logs = [  
+     "INFO running",  
+     "ERROR file not found",  
+     "WARNING disk low",  
+     "ERROR timeout"  
+ ]  
+ ​  
+ for line in logs:  
+     if re.search(r"^ERROR", line):  
+         print(line)
+```
+
+
+---
+
+总结建议
+
+- ✅ 写 `re.search()` 和 `re.findall()` 时，记得传入**字符串参数**。
+    
+- ✅ 提取出来的数字是字符串，计算前记得用 `int()` 转换。
+    
+- ✅ 使用 `()` 进行捕获，配合 `.group(n)` 提取目标字段。
+    
+- ✅ 推荐工具： [https://regex101.com/](https://regex101.com/)（可交互测试，解释正则） [Python re 官方文档](https://docs.python.org/3/library/re.html)
