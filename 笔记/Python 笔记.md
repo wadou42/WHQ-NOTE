@@ -165,20 +165,9 @@ plt.plot(X, Y, marker='o', markerfacecolor='red', markeredgecolor='black')
 '|' 水平线标记
 '\_' 垂直线标记
 
-## Python `re` 正则表达式学习笔记
+## `RE`
 
-### 📌 基本概念
-
-- `re` 是 Python 内置的正则模块，用于字符串模式匹配、提取、替换等。
-    
-- 使用前要导入模块：
-    
-
- import re
-
----
-
-### ✨ 常用函数
+###  常用函数
 
 1. `re.search(pattern, string)`
 
@@ -188,7 +177,7 @@ plt.plot(X, Y, marker='o', markerfacecolor='red', markeredgecolor='black')
     
 - 用 `.group()` 获取匹配内容。
 
-#### 示例：
+**示例**：
 ```python
  match = re.search(r"\d+", "Task took 123 ms")  
  if match:  
@@ -203,7 +192,7 @@ plt.plot(X, Y, marker='o', markerfacecolor='red', markeredgecolor='black')
     
 - 如果使用了多个 `()` 捕获组，返回的是元组列表。
     
-#### 示例：
+**示例**：
 ```python
  nums = re.findall(r"\d+", "ID: 123, 456, 789")  
  print(nums)           # ['123', '456', '789']  
@@ -217,11 +206,8 @@ plt.plot(X, Y, marker='o', markerfacecolor='red', markeredgecolor='black')
 - `group(0)`：整个匹配串
     
 - `group(1)`：第一个 `()` 的内容，以此类推
-    
-
-#### 示例：
-```
-python
+**示例**：
+```python
  text = "Backup ID: 456, Archive ID: 789"  
  match = re.search(r"Backup ID:\s*(\d+), Archive ID:\s*(\d+)", text)  
  print(match.group(1))  # '456'  
@@ -229,20 +215,17 @@ python
 ```
 
 
-## 🧠 常见错误和注意事项
+**常见错误和注意事项**
 
 - ✅ `re.search()` 和 `re.findall()` 都需要传入两个参数：
     
-
- re.search(pattern, string)  
- re.findall(pattern, string)
+ `re.search(pattern, string)`  
+ `re.findall(pattern, string)`
 
 - ✅ 提取到的数字默认是字符串类型，需要用 `int()` 转换才能用于计算。
     
-
 ---
-
-## 🛠 常用正则语法速查
+### 🛠 常用正则语法速查
 
 |表达式|含义|
 |---|---|
@@ -258,9 +241,9 @@ python
 |`\b`|单词边界（boundary）|
 
 ---
-###  示例：提取日志数字并计算平均值
-
- logs = [  
+示例：提取日志数字并计算平均值
+```python
+logs = [  
      "Duration: 83ms",  
      "Duration: 105ms",  
      "Duration: 97ms",  
@@ -278,16 +261,21 @@ python
  ​  
  average = total / count if count else 0  
  print("平均耗时:", average)
+```
+ 
 
 ---
 
 示例：提取特定字段的数字
 
+```python
  line = "Backup ID: 456, Archive ID: 789"  
  match = re.search(r"Backup ID:\s*(\d+), Archive ID:\s*(\d+)", line)  
  if match:  
      print("Backup ID:", int(match.group(1)))  
      print("Archive ID:", int(match.group(2)))
+```
+
 
 ---
 
@@ -305,15 +293,11 @@ python
          print(line)
 ```
 
-
 ---
 
 总结建议
 
-- ✅ 写 `re.search()` 和 `re.findall()` 时，记得传入**字符串参数**。
-    
-- ✅ 提取出来的数字是字符串，计算前记得用 `int()` 转换。
-    
-- ✅ 使用 `()` 进行捕获，配合 `.group(n)` 提取目标字段。
-    
-- ✅ 推荐工具： [https://regex101.com/](https://regex101.com/)（可交互测试，解释正则） [Python re 官方文档](https://docs.python.org/3/library/re.html)
+-  写 `re.search()` 和 `re.findall()` 时，记得传入**字符串参数**。
+-  提取出来的数字是字符串，计算前记得用 `int()` 转换。
+- 使用 `()` 进行捕获，配合 `.group(n)` 提取目标字段。
+- 推荐工具： [https://regex101.com/](https://regex101.com/)（可交互测试，解释正则） [Python re 官方文档](https://docs.python.org/3/library/re.html)
