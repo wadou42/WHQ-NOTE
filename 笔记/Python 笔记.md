@@ -165,5 +165,3 @@ plt.plot(X, Y, marker='o', markerfacecolor='red', markeredgecolor='black')
 '|' 水平线标记
 '\_' 垂直线标记
 
-
-4.
