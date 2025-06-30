@@ -257,6 +257,8 @@ scp -3 user@server_a:/path/to/file user@server_b:/path/to/remote/directory
 scp -3 -r whq@173.52.1.2:/home/whq/CodeRep wanghongqi@172.31.128.205:/home/wanghongqi
 
 scp -3 -r wanghongqi@172.31.128.205:/home/wanghongqi/CodeRep/models/modify_saved_combined_model_best.pth whq@173.52.1.2:/home/whq
+
+scp -3 -r whq@173.73.48.147:/home/whq/utils/dataset_all whq@172.28.102.22:/home/whq/Autotunning/train/data/filter_0
 ```
 直接向某一个服务器传输
 ```bash
