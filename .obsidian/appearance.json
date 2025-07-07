@@ -1,10 +1,10 @@
 {
-  "theme": "obsidian",
+  "theme": "moonstone",
   "accentColor": "",
-  "cssTheme": "Obsidian Nord",
+  "cssTheme": "",
   "baseFontSizeAction": true,
   "monospaceFontFamily": "Andale Mono",
-  "baseFontSize": 27,
+  "baseFontSize": 24,
   "enabledCssSnippets": [
     "page-width"
   ]
