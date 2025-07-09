@@ -1,7 +1,7 @@
 {
-  "theme": "moonstone",
+  "theme": "obsidian",
   "accentColor": "",
-  "cssTheme": "",
+  "cssTheme": "Dracula Official",
   "baseFontSizeAction": true,
   "monospaceFontFamily": "Andale Mono",
   "baseFontSize": 24,
