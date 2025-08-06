@@ -4,7 +4,7 @@
   "cssTheme": "Dracula Official",
   "baseFontSizeAction": true,
   "monospaceFontFamily": "Andale Mono",
-  "baseFontSize": 18,
+  "baseFontSize": 21,
   "enabledCssSnippets": [
     "page-width"
   ]
