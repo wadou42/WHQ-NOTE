@@ -1,0 +1,18 @@
+/* 全局设置 */
+body {
+  --file-line-width: 90%;
+}
+
+/* 编辑模式滚动条靠右 */
+.markdown-source-view {
+  max-width: 100%;
+  margin: 0 0 0 calc(100% - var(--file-line-width));
+  padding-right: 0 !important;
+}
+
+/* 编辑模式滚动容器 */
+.markdown-source-view .cm-scroller {
+  overflow-y: auto;
+  padding-right: 0 !important;
+  margin-right: 0 !important;
+}
