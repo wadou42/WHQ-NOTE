@@ -4,7 +4,7 @@
   "cssTheme": "Obsidian Nord",
   "baseFontSizeAction": true,
   "monospaceFontFamily": "Andale Mono",
-  "baseFontSize": 24,
+  "baseFontSize": 23,
   "enabledCssSnippets": [
     "page-width"
   ]
