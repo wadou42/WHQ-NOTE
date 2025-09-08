@@ -196,6 +196,14 @@ alais how=tldr
 
 
 ## Linux 常用命令
+### 新建用户
+```bash
+useradd -m newusername
+passwd newusername
+visudo
+```
+
+```
 
 ###  压缩常用的命令
 
