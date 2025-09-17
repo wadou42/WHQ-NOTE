@@ -108,7 +108,8 @@ git config --global user.email "wanghongqi@tju.edu.cn"
 
 服务器生成rsa
 ```bash
-ssh-keygen -t rsa
+ssh-keygen -t rsa 
+# 之后就可以上传至gitee等平台，但是注意，很多服务器可能并不支持ssh，只能使用https
 ssh -T git@github.com   # verify
 ```
 
@@ -139,7 +140,7 @@ git remote set-url origin git@github.com:wadou42/Autotunning.git
 
 ### 添加ssh
 ```bash
-ssh-keygen -t rsa -C "508745774@qq.com"
+ssh-keygen -t rsa -C "wanghongqi@tju.edu.cn"
 cat .ssh/id_rsa.pub
 ```
 ### 创建分支
@@ -160,6 +161,30 @@ git checkout -b refactor origin/refactor
 # 如果是一个新的服务器，可以这样同步所有的分支
 for branch in $(git branch -r | grep -v 'HEAD'); do git checkout --track "$branch"; done
 ```
+
+### 工作流
+```bash
+# 同步gitee主分支内容
+git checkout master
+git fetch
+git log origin/master || git diff master origin/master
+git merge origin/master || git rebase origin/master
+
+# 创建一个新分支用于开发
+git checkout -b feature/your-new-feature-name
+
+# 开发
+git add 
+git commit
+
+# 推送分支到远端
+git push -u origin feature/your-new-feature-name
+
+# 在gitee上提pull request合并 feature/your-new-feature-name 到 master（如果需要别人review的话，就指定人）
+
+# 在pull request通过的时候删除gitee上的相关分支
+# 同步一次gitee主分支内容，然后删除本地分支
+```
 ## tldr
 too long doesn't read
 ```bash
@@ -171,6 +196,14 @@ alais how=tldr
 
 
 ## Linux 常用命令
+### 新建用户
+```bash
+useradd -m newusername
+passwd newusername
+visudo
+```
+
+```
 
 ###  压缩常用的命令
 
