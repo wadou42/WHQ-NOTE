@@ -1,7 +1,7 @@
 {
   "theme": "obsidian",
-  "accentColor": "",
-  "cssTheme": "Obsidian Nord",
+  "accentColor": "#bdb3d6",
+  "cssTheme": "",
   "baseFontSizeAction": true,
   "monospaceFontFamily": "Andale Mono",
   "baseFontSize": 23,
