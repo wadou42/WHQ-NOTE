@@ -4,7 +4,7 @@
   "cssTheme": "",
   "baseFontSizeAction": true,
   "monospaceFontFamily": "Andale Mono",
-  "baseFontSize": 23,
+  "baseFontSize": 19,
   "enabledCssSnippets": [
     "page-width"
   ]
