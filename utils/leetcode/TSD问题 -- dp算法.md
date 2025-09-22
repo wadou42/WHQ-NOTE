@@ -72,5 +72,4 @@ void Dynamic_Programming()
     delete[]d;
     delete[]path;
 }
-~~~
 
