@@ -185,6 +185,10 @@ git push -u origin feature/your-new-feature-name
 # 在pull request通过的时候删除gitee上的相关分支
 # 同步一次gitee主分支内容，然后删除本地分支
 ```
+Q：如果分支落后几个commit，又领先几个commit 怎么操作？
+A：先在自己的master上pull origin/master，然后git merge到自己的分支，最后再commit
+Q：如何将某一个文件恢复到上一次commit？
+A：git checkout -- file_path
 ## tldr
 too long doesn't read
 ```bash
