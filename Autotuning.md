@@ -39,6 +39,12 @@
 | scann  | ann-benchmark   |                     |
 | zstd?  | test.json       |                     |
 | mysql? | sysbench        | 64 * 100w, readonly |
+time 
+param
+
+flags no PGO 
+PGO -
+-
 
 |               软件\方法                |            Our             |              O3              |             SRTuner              |        ir2vec        |
 | :--------------------------------: | :------------------------: | :--------------------------: | :------------------------------: | :------------------: |
