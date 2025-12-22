@@ -15,3 +15,5 @@ Windows Registry Editor Version 5.00
 [HKEY_CLASSES_ROOT\MarkdownFile\shell\open]
 ```
 2. 改名为.reg 文件，运行即可
+
+

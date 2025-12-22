@@ -365,3 +365,26 @@ export https_proxy=http://127.0.0.1:7892
 * 终端输入 exit
 
 ### 免密登录
+```bash
+ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+```
+## 跳板机免密登录
+只要将公钥依次加入各个跳板机中就可以了，但是windows的ssh有些不一样（常用wondows做跳板机）
+
+需要更改`C:\ProgramData\ssh\sshd.config` （ProgramData 是隐藏文件夹）
+```bash
+#确保以下3条没有被注释
+PubkeyAuthentication yes # 使用公钥
+AuthorizedKeysFile	.ssh/authorized_keys # 公钥位置
+PasswordAuthentication no # 免密登录
+
+#确保以下2条有注释掉
+#Match Group administrators
+#  AuthorizedKeysFile __PROGRAMDATA__/ssh/administrators_authorized_keys
+
+```
+最后重启一下sshd服务即可,在管理员权限下powershell
+```bash
+net stop sshd
+net start sshd
+```
