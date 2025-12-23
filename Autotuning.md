@@ -54,3 +54,16 @@
 - [ ] 周三 将ir2vec的代码整理完成，挂上三款验收软件的search
 - [ ] 周四 茶思屋测试snappy-SRTuner-our method-ir2vec
 - [ ] 周五、周六解决文档问题
+
+
+
+
+
+
+
+1. 为什么是用Unixcode？
+ 主要候选的有CodeT5  更适合文本生成，不适合表征任务。
+ graphcodebert则需要DFG输入，但是输入的token有限，因此效果不够好，而且gpb的预训练数据中不包含c++可能无法理解c++复杂的模板。
+ Unixcode是在训练的时候是包含c++的。UniXcoder 的分词器（Tokenizer）经过优化，能比早期的 CodeBERT 更精简地表示 C 家族语言
+ UniXcoder 采用了**对比学习（Contrastive Learning）**，使代码的表征空间分布更加均匀。
+- **对你的意义**：这种特性使得模型对“代码微调”非常敏感。当你改变一个优化选项标签（如从 `<opt_on_42>` 到 `<opt_on_O3>`）时，UniXcoder 在 Embedding 空间中能够更灵敏地捕获这种配置变化带来的语义漂移，从而提高二分类的置信度准确性。
