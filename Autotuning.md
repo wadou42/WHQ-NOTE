@@ -7,6 +7,7 @@
 | scann  | ann-benchmark   |                     |     |
 | zstd?  | test.json       | level 3             |     |
 | mysql? | sysbench        | 64 * 100w, readonly |     |
+|        |                 |                     |     |
 
 
 |   软件\方法   |            Our             |              O3              |             SRTuner             |        ir2vec        | 提升    |
