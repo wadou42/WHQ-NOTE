@@ -92,3 +92,21 @@ A：git checkout -- file_path 或者使用git restore file;
 git restore file;
 git restore --staged file
 ```
+
+### commit 规范
+• `feat`: 新功能 (如新实验脚本)。
+• `fix`: 修复 Bug (如 Loss NaN 问题)。
+• `build`: 影响构建或外部依赖 (如 `.gitattributes`, `Dockerfile`)。
+• `data`: (自定义) 提交模型权重、实验结果或数据集。
+• `docs`: 仅文档修改。
+• `refactor`: 代码重构，不影响逻辑。
+
+**修改最后一次提交信息**：`git commit --amend -m "新消息"`。
+
+### Git LFS
+
+• 核心比喻：LFS 像“行李寄存处”，Git 仓库只存“寄存小票”（指针文件）。
+• 初始化：`git lfs install` (全局执行一次)。
+• 追踪规则：`git lfs track "*.pth"` (生成 `.gitattributes`)。
+• 关键步骤：必须 `git add .gitattributes` 并提交，规则才能生效。
+• 检查状态：使用 `git lfs ls-files` 查看哪些文件已被 LFS 接管。
