@@ -1,0 +1,11 @@
+{
+  "theme": "obsidian",
+  "accentColor": "#bdb3d6",
+  "cssTheme": "",
+  "baseFontSizeAction": true,
+  "monospaceFontFamily": "Andale Mono",
+  "baseFontSize": 24,
+  "enabledCssSnippets": [
+    "page-width"
+  ]
+}

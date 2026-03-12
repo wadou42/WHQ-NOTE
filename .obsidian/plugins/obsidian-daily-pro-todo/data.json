@@ -1,0 +1,9 @@
+{
+  "templateHeading": "## TODO",
+  "deleteOnComplete": true,
+  "removeEmptyTodos": true,
+  "displayTodayInHistory": false,
+  "todayHistoryHeader": "## Today in history",
+  "historyShowDirect": false,
+  "todayHistoryCount": "1"
+}
