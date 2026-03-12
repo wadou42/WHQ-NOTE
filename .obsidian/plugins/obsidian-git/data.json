@@ -17,7 +17,11 @@
   "autoBackupAfterFileChange": true,
   "treeStructure": true,
   "refreshSourceControl": true,
+<<<<<<< HEAD
   "basePath": "git@github.com:wadou42/WHQ-NOTE.git",
+=======
+  "basePath": "https://github.com/wadou42/WHQ-NOTE.git",
+>>>>>>> f4d91882fdc0d7f46ccc7798257a46c8219458a2
   "differentIntervalCommitAndPush": false,
   "changedFilesInStatusBar": false,
   "showedMobileNotice": true,
